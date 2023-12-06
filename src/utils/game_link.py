@@ -33,6 +33,7 @@ class RaceRecord(ForzaBrigde):
         super().__init__(udp_ip, udp_port)
         self.mode = mode
         self.frequency = frequency
+        self.filename = str(uuid.uuid1())
         pass
     
     @property
@@ -50,8 +51,7 @@ class RaceRecord(ForzaBrigde):
 
     @property
     def file_path(self):
-        filename = str(uuid.uuid1())
-        return f"./data/{filename}.csv"
+        return f"./data/{self.filename}.csv"
 
     @property
     def frequency_time(self):

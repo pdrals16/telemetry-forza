@@ -5,6 +5,8 @@ UDP_IP = "192.168.18.3"
 UDP_PORT = 5005
 FREQUENCY = 10
 
+python main.py --ip 192.168.18.3 --port 5005 --mode dash --frequency 10
+
 [Letter][Number]
 
 The letter defines the type from one of the following:
